@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Trees</title>
+
+<link rel="stylesheet" href="fonts/cormorant-v11-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+    :root {
+    --main-color: #ffffff;
+    --second-color: #262626;
+    --third-color: #00654E;
+    --foth-color: #C0B487;
+    --fifth-color: #E5AB39;
+    --six-color: #006E55;
+    --seven-color: #005844;
+    --url-features-one: url('../img/tree.svg');
+    --url-features-two: url('../img/christmas-decorations.png');
+    --url-features-three: url('../img/flowers.png');
+    --url-features-four: url('../img/delivery-truck.png');
+}
+
+</style>
+
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/burger.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/features.css">
+    <link rel="stylesheet" href="style/product.css">
+    <link rel="stylesheet" href="style/pay.css">
+    <link rel="stylesheet" href="style/option-pay.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/overlay.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/timer.css">
+    
+<script src="garland/garland.js" defer></script>
+<script src="snow/snow.js" defer></script>
+<script src="script/burger.js" defer></script>
+<script src="script/modal.js" defer></script>
+<script src="script/timer.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__container">
+
+    <button class="burger burger_active header__burger">
+        <span class="burger__line"></span>
+    </button>
+
+    <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+            <li class="naviagtion__item">
+                <a href="#one" class="navigation__link">Fraser fir</a>
+            </li>
+
+            <li class="naviagtion__item">
+                <a href="#two" class="navigation__link">Siberian fir</a>
+            </li>
+
+            <li class="naviagtion__item">
+                <a href="#three" class="navigation__link">Russian spruce</a>
+            </li>
+
+            <li class="naviagtion__item">
+                <a href="#pay" class="navigation__link">How to pay?</a>
+            </li>
+        </ul>
+    </nav>
+    <button class="header__consultation">Consultation</button>
+    </div>
+</header>
+
+<!-- основная часть сайта -->
+<main class="main">
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__left">
+                <img class="hero__img" src="img/photo.jpg" width="705" height="769" alt="choinka obok komina">
+            </div>
+
+            <div class="hero__right">
+                <h1 class="hero__title">Celebrate the New Year with &NonBreakingSpace;  beautiful live Christmas tree!</h1>
+                <p class="hero__description">We have only the fluffiest and freshest Christmas trees in stock.</p>
+                <a class="hero__down" href="#one">
+                    <img class="hero__down-img" src="img/bauble.png" alt="" width="113" height="139">
+                    <span>Place an order</span>
+                </a>
+            </div>
+        
+        </div>
+    </section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="visually-hidden">Advantages</h2>
+        <ul class="features__list">
+            <li class="features__item features__item_one">Fluffy and fragrant Christmas trees</li>
+             <li class="features__item features__item_two">Set of Christmas tree decorations as a gift</li>
+            <li class="features__item features__item_three">Christmas trees will remain fresh for a long time</li>
+            <li class="features__item features__item_four">We will deliver the Christmas tree at our expense</li>
+        </ul>
+    </div>
+</section>
+
+<section class="product" id='one'>
+   <div class="container product__container">
+        <div class="product__content">
+            <h2 class="product__title">
+                Fraser fir
+            </h2>
+            <p class="product__features">
+                The Fraser fir was more often used as the White House Christmas tree.
+            </p>
+            <p class="product__description">
+                Its mild scent, shape, and ability to keep its needles soft for a long time make it one of the best trees for Christmas.
+            </p>
+            <div class="product__button-wrapper">
+                <button class="product__button product__button_order" data-order=" Пихта Фразера">
+                    Order
+                </button>
+                <a  class="product__button product__button_more" href="#">More details</a>
+            </div>
+        </div>
+    <img class="product__picture" src="img/choinka1.png" width="630" height="590" alt="Пихта Фразера">
+   </div>
+</section> 
+
+<section class="product" id='two'>
+    <div class="container product__container">
+        <div class="product__content">
+            <h2 class="product__title">
+                Siberian fir
+            </h2>
+            <p class="product__features">
+                Siberian fir is one of the most beautiful and fragrant conifers and can often be found in parks and gardens
+            </p>
+            <p class="product__description">
+                The needles of Siberian fir, unlike spruce, are larger, greener, not prickly at all and soft like grass
+            </p>
+            <div class="product__button-wrapper">
+                <button class="product__button product__button_order" data-order=" Сибирская пихта">
+                    Order
+                </button>
+                <a  class="product__button product__button_more" href="#">More details</a>
+            </div>
+        </div>
+    <img class="product__picture" src="img/choinka2.png" width="630" height="590" alt="Пихта Фразера">
+   </div>
+</section>
+
+<section class="product" id='three'>
+    <div class="container product__container">
+        <div class="product__content">
+            <h2 class="product__title">
+                Russian spruce
+            </h2>
+            <p class="product__features">
+                The Russian spruce was more often used as the White House Christmas tree.
+            </p>
+            <p class="product__description">
+                Its mild scent, shape, and ability to keep its needles soft for a long time make it one of the best trees for Christmas.
+            </p>
+            <div class="product__button-wrapper">
+                <button class="product__button product__button_order" data-order=" Русская ель">
+                    Order
+                </button>
+                <a  class="product__button product__button_more" href="#">More details</a>
+            </div>
+        </div>
+    <img class="product__picture" src="img/choinka3.png" width="630" height="590" alt="Пихта Фразера">
+   </div>
+</section>
+
+<section class="pay" id="pay">
+    <div class="container">
+    <h2 class="pay__title">
+        <ul class="pay__list">
+            <li class="pay__item">
+                <article class="pay__option_pay option-pay">
+                    <div class="option-pay__picture-wrapper">
+                        <img class="option-pay__picture" src="img/section8-mastercard-logo.png" alt="Платежная система">
+                        <img class="option-pay__picture" src="img/section8-visa-inc-logo.png" alt="Платежная система">
+                        <img class="option-pay__picture" src="img/section8-mir-logo.png" alt="Платежная система">
+                    </div>
+                    <h3 class="option-pay__title">By bank card</h3>
+                    <p class="option__pay__description">Visa/Mastercard or PayPal from any country</p>
+                </article>
+            </li>
+
+            <li class="pay__item">
+                <article class="pay__option_pay option-pay">
+                    <div class="option-pay__picture-wrapper">
+                        <img class="option-pay__picture" src="img/tree (1) (1) 2.jpg" alt="лого">
+                    </div>
+                    <h3 class="option-pay__title">Interest-free installments from us</h3>
+                    <p class="option__pay__description">We divide the payment into 2 parts. You pay the first part immediately, the second 15 days after receiving the tree</p>
+                    </article>
+            </li>
+
+            <li class="pay__item">
+                <article class="pay__option_pay option-pay">
+                    <div class="option-pay__picture-wrapper">
+                        <img class="option-pay__picture" src="img/section8-tinkoff.svg" alt="Тинькофф">
+                    </div>
+                    <h3 class="option-pay__title">Interest-free installments from Tinkoff</h3>
+                    <p class="option__pay__description">Рассрочка на 3 месяца без первоначального платежа</p>
+                    </article>
+            </li>
+        </ul>
+    </h2>
+    </div>
+</section>
+
+</main>
+
+ <footer class="footer">
+    <div class="container footer__container">
+
+        <img class="logo footer__logo logo__second" src="img/tree (1) (1) 2.jpg" alt="лого">
+
+        <address class="footer__contacts">
+            <a class="footer__items footer__link" href="tel:+789479309294">8 (947) 930 92-94</a>
+            <a class="footer__items footer__link" href="mailto:Сhristmas_Trees@gmail.com">Сhristmas_Trees@gmail.com</a>
+        </address>
+
+        <ul class="footer__list-social">
+            <li class="footer__item-social">
+                <a href="#" class="footer__link footer__link_social">
+                    <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"><g fill="#fff">
+                        <path d="M18.116 15.232c-.277-.142-1.655-.818-1.912-.91-.256-.096-.444-.141-.63.143-.187.282-.72.909-.888 1.1-.163.187-.328.21-.604.07-1.646-.822-2.725-1.467-3.81-3.328-.286-.495.288-.46.824-1.529.091-.188.045-.348-.026-.49-.07-.142-.63-1.518-.863-2.08-.226-.545-.46-.469-.63-.48-.162-.01-.348-.01-.536-.01-.187 0-.49.072-.746.349-.256.281-.98.96-.98 2.335 0 1.377 1.003 2.71 1.14 2.898.142.188 1.973 3.01 4.784 4.227 1.777.767 2.473.833 3.361.7.541-.08 1.656-.675 1.887-1.332.23-.655.23-1.216.162-1.333-.068-.124-.256-.196-.533-.33Z"/><path d="M23.491 8.592a11.379 11.379 0 0 0-2.445-3.638 11.282 11.282 0 0 0-3.638-2.445A11.321 11.321 0 0 0 13 1.625h-.05a11.348 11.348 0 0 0-8.037 3.362 11.272 11.272 0 0 0-2.417 3.626 11.379 11.379 0 0 0-.871 4.44 11.41 11.41 0 0 0 1.219 5.076v3.86c0 .644.523 1.167 1.168 1.167h3.862a11.41 11.41 0 0 0 5.075 1.219h.053c1.521 0 2.996-.294 4.385-.87a11.285 11.285 0 0 0 3.626-2.418 11.348 11.348 0 0 0 3.362-8.036 11.332 11.332 0 0 0-.884-4.459Zm-3.836 11.121A9.395 9.395 0 0 1 13 22.445h-.043a9.479 9.479 0 0 1-4.395-1.104l-.214-.114H4.773v-3.575l-.114-.214a9.479 9.479 0 0 1-1.104-4.395 9.387 9.387 0 0 1 2.732-6.698 9.374 9.374 0 0 1 6.672-2.79h.043a9.4 9.4 0 0 1 3.662.733 9.384 9.384 0 0 1 3.021 2.032 9.406 9.406 0 0 1 2.765 6.723 9.41 9.41 0 0 1-2.795 6.67Z" fill="currentColor"/></g></svg>
+                </a>
+            </li>
+            <li class="footer__item-social">
+                <a href="#" class="footer__link footer__link_social">
+                    <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                        <path fill="currentColor" d="M13 2c-2.985 0-3.36.014-4.533.066-1.173.055-1.972.24-2.672.512-.734.276-1.4.709-1.948 1.269a5.4 5.4 0 0 0-1.27 1.948c-.272.699-.457 1.499-.511 2.668C2.014 9.638 2 10.013 2 13c0 2.987.014 3.36.066 4.534.055 1.171.24 1.97.512 2.67a5.403 5.403 0 0 0 1.269 1.948c.61.612 1.223.989 1.947 1.27.7.272 1.498.457 2.67.511C9.638 23.986 10.012 24 13 24c2.988 0 3.36-.014 4.535-.066 1.17-.055 1.971-.24 2.671-.512a5.386 5.386 0 0 0 1.947-1.269 5.404 5.404 0 0 0 1.27-1.948c.27-.7.456-1.499.511-2.67.052-1.173.066-1.547.066-4.535 0-2.988-.014-3.362-.066-4.536-.055-1.17-.24-1.97-.512-2.669a5.4 5.4 0 0 0-1.269-1.948 5.379 5.379 0 0 0-1.948-1.27c-.701-.272-1.502-.457-2.672-.511C16.36 2.014 15.986 2 12.997 2h.004H13Zm-.986 1.983h.987c2.937 0 3.285.01 4.444.063 1.073.048 1.656.228 2.044.378.512.2.88.439 1.265.824a3.4 3.4 0 0 1 .822 1.265c.151.386.33.97.378 2.042.054 1.159.065 1.507.065 4.442 0 2.936-.011 3.285-.065 4.444-.048 1.073-.228 1.654-.378 2.042-.177.478-.458.91-.824 1.264-.385.385-.75.623-1.265.822-.385.151-.968.33-2.042.38-1.159.052-1.507.064-4.444.064-2.937 0-3.286-.012-4.445-.065-1.072-.049-1.654-.228-2.042-.379a3.407 3.407 0 0 1-1.265-.822 3.41 3.41 0 0 1-.825-1.265c-.15-.387-.33-.97-.378-2.042-.052-1.16-.063-1.507-.063-4.446 0-2.937.01-3.283.063-4.442.05-1.073.228-1.656.38-2.043.199-.513.438-.88.823-1.265.385-.385.75-.623 1.265-.823.388-.15.97-.33 2.042-.38 1.015-.046 1.408-.06 3.458-.061v.003Zm6.859 1.826a1.32 1.32 0 1 0 0 2.64 1.32 1.32 0 0 0 0-2.64ZM13 7.35a5.65 5.65 0 1 0-.176 11.3 5.65 5.65 0 0 0 .176-11.3Zm0 1.982a3.667 3.667 0 1 1 0 7.333 3.667 3.667 0 0 1 0-7.333Z" fill="currentColor"</svg>
+                </a>
+            </li>
+            <li class="footer__item-social">
+                <a href="#" class="footer__link footer__link_social">
+                    <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                        <path fill="currentColor" d="M24.375 12.929c0-.056 0-.12-.003-.193-.002-.206-.007-.437-.012-.683a38.176 38.176 0 0 0-.112-2.08c-.076-.916-.188-1.68-.34-2.254a3.543 3.543 0 0 0-2.496-2.501c-.719-.193-2.125-.313-4.106-.386-.942-.036-1.95-.059-2.958-.071-.353-.005-.68-.008-.975-.01h-.746c-.295.002-.622.005-.975.01-1.008.012-2.016.035-2.958.07-1.98.077-3.39.196-4.106.387a3.538 3.538 0 0 0-2.496 2.5c-.155.575-.264 1.339-.34 2.255a38.238 38.238 0 0 0-.112 2.08c-.007.246-.01.477-.012.683 0 .074-.003.137-.003.193v.142c0 .056 0 .12.003.193.002.206.007.437.012.683.02.709.056 1.414.112 2.08.076.916.188 1.68.34 2.254a3.538 3.538 0 0 0 2.496 2.501c.716.193 2.125.313 4.106.386.942.036 1.95.059 2.958.071.353.005.68.008.975.01h.746c.295-.002.622-.005.975-.01 1.008-.012 2.016-.035 2.958-.07 1.98-.077 3.39-.196 4.106-.387a3.534 3.534 0 0 0 2.496-2.5c.155-.575.264-1.339.34-2.255.056-.666.091-1.372.112-2.08.007-.246.01-.477.012-.683 0-.073.003-.137.003-.193v-.142Zm-1.828.132c0 .053 0 .112-.003.18-.002.198-.007.417-.012.653a34.28 34.28 0 0 1-.107 1.978c-.069.817-.165 1.488-.284 1.937a1.708 1.708 0 0 1-1.204 1.206c-.533.142-1.876.256-3.702.325a115.609 115.609 0 0 1-3.872.079h-.726l-.96-.008c-.993-.013-1.985-.035-2.912-.07-1.826-.072-3.171-.184-3.702-.326a1.713 1.713 0 0 1-1.204-1.206c-.119-.45-.215-1.12-.284-1.937a36.77 36.77 0 0 1-.107-1.978c-.007-.236-.01-.457-.012-.653 0-.068-.003-.13-.003-.18v-.122c0-.053 0-.112.003-.18.002-.198.007-.417.012-.653.018-.675.054-1.35.107-1.978.069-.817.165-1.488.284-1.937a1.708 1.708 0 0 1 1.204-1.206c.533-.142 1.876-.256 3.702-.325a115.315 115.315 0 0 1 3.872-.079h.726l.96.008c.993.013 1.985.035 2.912.071 1.826.071 3.171.183 3.702.325.584.157 1.046.62 1.204 1.206.119.45.215 1.12.284 1.937.053.627.086 1.303.107 1.978.007.236.01.457.012.653 0 .068.003.13.003.18v.122ZM10.74 16.402l5.89-3.427-5.89-3.377v6.804Z"fill="currentColor"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__item-social">
+                <a href="#" class="footer__link footer__link_social">
+                    <svg viewBox=" 0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                        <path fill="currentColor" d="M21.182 3.247c-.261.019-.517.08-.758.181h-.003c-.232.092-1.333.555-3.007 1.257L11.416 7.21c-4.303 1.812-8.534 3.596-8.534 3.596l.05-.02s-.291.096-.596.305a1.65 1.65 0 0 0-.476.461c-.15.22-.27.555-.225.902.073.586.453.938.726 1.133.276.196.54.288.54.288h.006l3.968 1.337c.177.57 1.209 3.96 1.456 4.741.147.467.289.758.467.98.086.115.187.21.308.286a.91.91 0 0 0 .2.086l-.041-.01c.012.004.022.014.03.017.033.009.055.012.097.018.628.19 1.132-.2 1.132-.2l.029-.022 2.342-2.133 3.926 3.012.09.038c.818.36 1.646.16 2.084-.193.442-.355.613-.81.613-.81l.028-.073L22.67 5.408c.086-.383.108-.743.013-1.091a1.468 1.468 0 0 0-.634-.85 1.521 1.521 0 0 0-.867-.22ZM21.1 4.912c-.004.052.006.046-.017.144v.01l-3.005 15.38c-.013.022-.035.07-.095.118-.063.05-.114.082-.378-.023l-4.802-3.682-2.9 2.644.61-3.892L18.357 8.3c.323-.3.215-.364.215-.364.023-.369-.488-.108-.488-.108l-9.893 6.129-.004-.017-4.741-1.596v-.004l-.013-.002a.215.215 0 0 0 .025-.01l.026-.013.025-.009 8.538-3.596c2.154-.907 4.325-1.821 5.995-2.527 1.67-.7 2.904-1.215 2.974-1.243.067-.026.035-.026.083-.026Z"fill="currentColor"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+<ul class="footer__info-list">
+    <li class="footer__item">Company name: TreesWarsaw</li>
+    <li class="footer__item">NIP: 8499348834883838</li>
+    <li class="footer__item">Account number: 434343590998749</li>
+</ul>
+
+<ul class="footer__rules-list">
+    <li class="footer__item">
+        <a href="#" class="footer__link">Confidentiality politics</a>
+    </li>
+    <li class="footer__item">
+        <a href="#" class="footer__link">Contract offer</a>
+    </li>
+</ul>
+
+<div class="footer__team">
+    <p class="footer__item">Design:
+<a class="footer__link" href="https://t.me/Mrsshmalloww">tg @Mrshmallowww</a>
+    </p>
+    <p class="footer__item">2024 year</p>
+    <p class="footer__item">©Christmas Trees</p>
+</div>
+
+    </div>
+</footer>
+
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+
+<div class="overlay overlay_order">
+    <div class="modal">
+
+        <button class="modal__close">
+            <svg
+             width="24"
+              height="24"
+               viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_134_2)">
+                <path
+                 d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                 fill="currentColor"/>
+                </g>
+                </svg>
+        </button>
+
+        <h2 class="modal__title">Checkout</h2>
+
+        <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+            <label class="modal__label">
+                <span class="modal__label-text">Full name</span>
+                <input class="modal__input" required name="bio" type="text" placeholder="Enter your full name">
+            </label>
+
+            <label class="modal__label modal__label_end">
+                <span class="modal__label-text">Number</span>
+                <input class="modal__input" required name="tel" type="tel" placeholder="Enter your phone number">
+            </label>
+
+            <input class="modal__order" type="hidden" name="order"> 
+            <!-- CКрытое поле -->
+
+            <button class="modal__button">Request a call</button>
+        </form>
+        
+    </div>
+</div>
+
+<div class="overlay overlay_consultation">
+<div class="modal">
+    <button class="modal__close">
+        <svg
+         width="24"
+          height="24"
+           viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <g
+             clip-path="url(#clip0_134_2)">
+            <path
+             d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor"/>
+            </g>
+            </svg>
+    </button>
+
+    <h2 class="modal__title">Order a consultation</h2>
+
+    <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+        <label class="modal__label modal__label_end">
+            <span class="modal__label-text">Full name</span>
+            <input class="modal__input" required name="bio" type="text" placeholder="Enter your full name">
+        </label>
+
+        <label class="modal__label modal__label_end">
+            <span class="modal__label-text">Number</span>
+            <input class="modal__input" required name="tel" type="tel" placeholder="Enter your phone number">
+        </label>
+
+        <input class="modal__order" type="hidden" name="order">
+
+        <button class="modal__button">Request a call</button>
+    </form>
+
+</div>
+</div>
+    
+</body>
+</html>
